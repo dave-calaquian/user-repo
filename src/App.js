@@ -1,7 +1,9 @@
+import AlbumPage from './pages/AlbumPage';
+
 function App() {
   return (
     <div className='App'>
-      <h1>hello world</h1>
+      <AlbumPage />
     </div>
   );
 }
