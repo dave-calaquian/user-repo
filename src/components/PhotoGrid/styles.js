@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledPhotoGrid = styled.div`
-  width: 300px;
+  flex: 1;
   height: 400px;
   margin: 24px;
   display: flex;
