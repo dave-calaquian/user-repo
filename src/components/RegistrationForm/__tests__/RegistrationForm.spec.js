@@ -18,7 +18,7 @@ describe('RegistrationForm', () => {
     context = render(<RegistrationForm registerUser={registerUser} />);
   });
 
-  describe('when being filled in', () => {
+  describe('On form fill up', () => {
     beforeEach(async () => {
       registerUser.mockResolvedValue();
       const { getByPlaceholderText, getByTestId } = context;

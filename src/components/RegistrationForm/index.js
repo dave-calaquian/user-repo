@@ -42,6 +42,7 @@ const RegistrationForm = ({ registerUser }) => {
           onChange={(e) =>
             dispatch({ type: 'SET_NAME', payload: e.target.value })
           }
+          className='form-field input'
         />
         <input
           type='text'
@@ -51,6 +52,7 @@ const RegistrationForm = ({ registerUser }) => {
           onChange={(e) =>
             dispatch({ type: 'SET_USERNAME', payload: e.target.value })
           }
+          className='form-field input'
         />
         <input
           type='text'
@@ -60,9 +62,14 @@ const RegistrationForm = ({ registerUser }) => {
           onChange={(e) =>
             dispatch({ type: 'SET_EMAIL', payload: e.target.value })
           }
+          className='form-field input'
         />
 
-        <button data-testid='new-user-submit-btn' type='submit'>
+        <button
+          data-testid='new-user-submit-btn'
+          type='submit'
+          className='submit-btn'
+        >
           Submit
         </button>
       </StyledRegistrationForm>
